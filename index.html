@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANOHAR SOLUTIONS | Professional Web Development</title>
+    <meta name="description" content="MANOHAR SOLUTIONS creates professional, responsive websites, business websites, landing pages, and portfolio websites." />
+    <meta name="keywords" content="freelance web developer, website design, responsive web development, business websites, landing pages, HTML CSS JavaScript" />
+    <meta name="author" content="MANOHAR SOLUTIONS" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Custom Pure CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sticky Navigation -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link" aria-label="MANOHAR SOLUTIONS">
+          <div class="brand-monogram">
+              <img src="assets/images/logo.png" alt="MS Logo" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">MANOHAR <span>SOLUTIONS</span></span>
+            <span class="brand-sub">Web Development Studio</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="services.html">Services</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">START A PROJECT</a>
+        </div>
+
+        <button type="button" class="hamburger-btn" aria-label="Open Navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <div class="mobile-nav-content">
+        <div class="mobile-nav-header">
+          <span class="brand-name">MANOHAR <span>SOLUTIONS</span></span>
+          <button type="button" class="close-drawer-btn" aria-label="Close Navigation" style="background:none; border:none; display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text-charcoal); padding:0.25rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li class="active"><a href="index.html">Home <span>→</span></a></li>
+          <li><a href="about.html">About <span>→</span></a></li>
+          <li><a href="services.html">Services <span>→</span></a></li>
+          <li><a href="projects.html">Projects <span>→</span></a></li>
+          <li><a href="contact.html">Contact <span>→</span></a></li>
+        </ul>
+        <div style="margin-top:auto;">
+          <a href="contact.html" class="btn btn-primary" style="width:100%;">START A PROJECT</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div>
+            <div class="badge-status">
+              <span class="badge-pulse"></span>
+              <span>Available for new projects · 2026</span>
+            </div>
+            <h1 class="headline-xl">BUILDING WEBSITES THAT HELP BUSINESSES GROW.</h1>
+            <p class="subheadline" style="margin-bottom: 2rem;">
+              I design and develop professional, responsive websites for businesses, brands, and individuals.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">START A PROJECT</a>
+              <a href="projects.html" class="btn btn-secondary">VIEW MY WORK ↓</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Responsive Design</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">Clean</span>
+                <span class="stat-label">Modern Code</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">Direct</span>
+                <span class="stat-label">Communication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Browser Mockup -->
+          <div>
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                  <span class="browser-dot"></span>
+                </div>
+                <span class="browser-url">manoharsolutions.dev</span>
+                <span style="font-size:0.75rem; color:var(--accent-terracotta); font-weight:700;">PROD</span>
+              </div>
+              <div class="browser-body">
+                <div class="mockup-inner">
+                  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-stone); padding-bottom:0.75rem; margin-bottom:1rem;">
+                    <strong style="font-size:0.8rem; color:#C85228;">MS / CLIENT PROJECT</strong>
+                    <span style="font-size:0.75rem; color:var(--text-muted);">Responsive Viewport</span>
+                  </div>
+                  <div style="height:14px; background:#141413; border-radius:4px; width:75%; margin-bottom:0.5rem;"></div>
+                  <div style="height:10px; background:#E5E0D8; border-radius:4px; width:50%; margin-bottom:1.5rem;"></div>
+                  <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+                    <div style="background:var(--bg-stone); border-radius:8px; padding:1rem; text-align:center;">
+                      <span style="font-size:0.75rem; font-weight:700; color:var(--text-charcoal);">Clean Code</span>
+                    </div>
+                    <div style="background:var(--bg-stone); border-radius:8px; padding:1rem; text-align:center;">
+                      <span style="font-size:0.75rem; font-weight:700; color:var(--text-charcoal);">Fast Load</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Intro Section -->
+      <section class="section section-stone">
+        <div class="container">
+          <div class="section-header" style="max-width: 760px;">
+            <span class="eyebrow">THE PHILOSOPHY</span>
+            <h2 class="headline-lg">YOUR IDEA. MY CODE. A PROFESSIONAL ONLINE PRESENCE.</h2>
+            <p class="subheadline">
+              I help businesses and individuals establish a strong online presence through clean design, responsive development, and user-focused websites.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <div class="feature-card">
+              <div class="card-icon">📱</div>
+              <h3 class="headline-md" style="font-size: 1.25rem;">Responsive Design</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">
+                Modern websites engineered to work smoothly and reliably across smartphones, tablets, laptops, and ultra-wide desktops.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">💻</div>
+              <h3 class="headline-md" style="font-size: 1.25rem;">Clean Development</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">
+                Handcrafted semantic HTML5, modular CSS, and modern JavaScript for superior loading speeds and zero code bloat.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">🎯</div>
+              <h3 class="headline-md" style="font-size: 1.25rem;">Client-Focused Solutions</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">
+                Collaborative process focused directly on turning your unique vision into an effective, conversion-driven website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Preview Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow">SERVICES</span>
+              <h2 class="headline-lg">WHAT I DO</h2>
+              <p class="subheadline">Professional web development services built around your goals.</p>
+            </div>
+            <a href="services.html" class="btn btn-secondary">VIEW ALL SERVICES →</a>
+          </div>
+
+          <div class="grid-3">
+            <!-- 1. Responsive Websites -->
+            <div class="service-card">
+              <div>
+                <div class="service-card-top">
+                  <span class="card-icon" style="margin-bottom:0;">📱</span>
+                  <span class="service-num">01</span>
+                </div>
+                <h3 class="headline-md" style="font-size:1.25rem;">Responsive Websites</h3>
+                <p style="color:var(--text-muted); font-size:0.875rem;">Modern websites that work smoothly across desktops, tablets, and smartphones.</p>
+                <ul class="service-features">
+                  <li><span class="check-mark">✓</span> Fluid multi-device layouts</li>
+                  <li><span class="check-mark">✓</span> Touch-friendly navigation</li>
+                  <li><span class="check-mark">✓</span> Cross-browser tested</li>
+                </ul>
+              </div>
+              <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-stone);">
+                <a href="contact.html" class="btn btn-primary" style="width:100%;">DISCUSS YOUR PROJECT →</a>
+              </div>
+            </div>
+
+            <!-- 2. Business Websites -->
+            <div class="service-card">
+              <div>
+                <div class="service-card-top">
+                  <span class="card-icon" style="margin-bottom:0;">💼</span>
+                  <span class="service-num">02</span>
+                </div>
+                <h3 class="headline-md" style="font-size:1.25rem;">Business Websites</h3>
+                <p style="color:var(--text-muted); font-size:0.875rem;">Professional websites designed to present your business, services, and brand online.</p>
+                <ul class="service-features">
+                  <li><span class="check-mark">✓</span> Trust-building company profile</li>
+                  <li><span class="check-mark">✓</span> Clear lead generation funnels</li>
+                  <li><span class="check-mark">✓</span> Conversion-focused layouts</li>
+                </ul>
+              </div>
+              <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-stone);">
+                <a href="contact.html" class="btn btn-primary" style="width:100%;">DISCUSS YOUR PROJECT →</a>
+              </div>
+            </div>
+
+            <!-- 3. Landing Pages -->
+            <div class="service-card">
+              <div>
+                <div class="service-card-top">
+                  <span class="card-icon" style="margin-bottom:0;">🚀</span>
+                  <span class="service-num">03</span>
+                </div>
+                <h3 class="headline-md" style="font-size:1.25rem;">Landing Pages</h3>
+                <p style="color:var(--text-muted); font-size:0.875rem;">Focused landing pages designed to clearly communicate your offer and encourage visitors to take action.</p>
+                <ul class="service-features">
+                  <li><span class="check-mark">✓</span> High-conversion structure</li>
+                  <li><span class="check-mark">✓</span> Sub-second loading speed</li>
+                  <li><span class="check-mark">✓</span> Seamless inquiry capture</li>
+                </ul>
+              </div>
+              <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-stone);">
+                <a href="contact.html" class="btn btn-primary" style="width:100%;">DISCUSS YOUR PROJECT →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work Section -->
+      <section class="section section-stone">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                PORTFOLIO
+              </span>
+              <h2 class="headline-lg">SELECTED WORK</h2>
+              <p class="subheadline">A selection of websites and digital experiences created by MANOHAR SOLUTIONS.</p>
+            </div>
+            <a href="projects.html" class="btn btn-white">VIEW ALL PROJECTS →</a>
+          </div>
+
+          <div class="grid-2">
+            <!-- Project 01: GLAMORA -->
+            <div class="project-card">
+              <a href="casestudy.html?project=glamora" class="project-img-wrap" aria-label="View Glamora Case Study">
+                <img src="assets/images/glamora_fashion_showcase_1790489146985.jpg" alt="GLAMORA Fashion Website"  />
+                <span class="tag-badge">E-COMMERCE</span>
+              </a>
+              <div class="project-meta">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="p-num">PROJECT 01</span>
+                    <span>Fashion / Beauty Website</span>
+                  </div>
+                  <h3 class="headline-md">
+                    <a href="casestudy.html?project=glamora">GLAMORA</a>
+                  </h3>
+                  <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">A modern and elegant website concept designed for a fashion and beauty brand.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Lookbook UX</span>
+                    <span class="project-tag">Product Grid</span>
+                    <span class="project-tag">Mobile-First</span>
+                  </div>
+                </div>
+                <div class="project-meta-bottom">
+                  <a href="casestudy.html?project=glamora" class="btn btn-primary" style="padding: 0.6rem 1.25rem;">VIEW CASE STUDY →</a>
+                  <a href="contact.html?project=glamora" class="btn-link" style="color:var(--text-muted); font-size:0.75rem;">INQUIRE →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 02: HARI NATURALS -->
+            <div class="project-card">
+              <a href="casestudy.html?project=hari-naturals" class="project-img-wrap" aria-label="View Hari Naturals Case Study">
+                <img src="assets/images/hari_naturals_showcase_1790489158642.jpg" alt="HARI NATURALS Product Website"  />
+                <span class="tag-badge">ORGANIC STORE</span>
+              </a>
+              <div class="project-meta">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="p-num">PROJECT 02</span>
+                    <span>Natural Products Website</span>
+                  </div>
+                  <h3 class="headline-md">
+                    <a href="casestudy.html?project=hari-naturals">HARI NATURALS</a>
+                  </h3>
+                  <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">A clean product-focused website concept for a natural products brand.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">WhatsApp Orders</span>
+                    <span class="project-tag">Botanicals</span>
+                    <span class="project-tag">Trust Badges</span>
+                  </div>
+                </div>
+                <div class="project-meta-bottom">
+                  <a href="casestudy.html?project=hari-naturals" class="btn btn-primary" style="padding: 0.6rem 1.25rem;">VIEW CASE STUDY →</a>
+                  <a href="contact.html?project=hari-naturals" class="btn-link" style="color:var(--text-muted); font-size:0.75rem;">INQUIRE →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Approach Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              PROCESS
+            </span>
+            <h2 class="headline-lg">MY APPROACH</h2>
+            <p class="subheadline">A structured roadmap ensuring your website launches on schedule with complete quality assurance.</p>
+          </div>
+
+          <div class="grid-4">
+            <div class="process-step">
+              <div class="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <span class="step-badge">STEP 01</span>
+              <h3 class="headline-md" style="font-size:1.25rem;">DISCOVER</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Understand your business, audience, goals, and project requirements.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <span class="step-badge">STEP 02</span>
+              <h3 class="headline-md" style="font-size:1.25rem;">PLAN</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Create the website structure, content direction, and user experience.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="step-badge">STEP 03</span>
+              <h3 class="headline-md" style="font-size:1.25rem;">BUILD</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Develop a responsive and polished website using clean front-end technologies.</p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                </svg>
+              </div>
+              <span class="step-badge">STEP 04</span>
+              <h3 class="headline-md" style="font-size:1.25rem;">LAUNCH</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Test the website across devices and prepare it for launch.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why MANOHAR SOLUTIONS -->
+      <section class="section section-stone">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              ADVANTAGE
+            </span>
+            <h2 class="headline-lg">WHY MANOHAR SOLUTIONS</h2>
+            <p class="subheadline">Dedicated freelance focus delivering reliable code without agency overhead.</p>
+          </div>
+
+          <div class="grid-4">
+            <div class="feature-card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="headline-md" style="font-size:1.15rem;">Professional Design</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Refined typography and balanced layouts designed specifically for your brand.</p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="headline-md" style="font-size:1.15rem;">Responsive Development</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Guaranteed smooth rendering across smartphones, tablets, and desktops.</p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  <polyline points="9 10 11 12 15 8"></polyline>
+                </svg>
+              </div>
+              <h3 class="headline-md" style="font-size:1.15rem;">Clear Communication</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Direct updates and honest milestones with no intermediaries or delays.</p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="headline-md" style="font-size:1.15rem;">Client-Focused Approach</h3>
+              <p style="color:var(--text-muted); font-size:0.875rem;">Every technical decision is guided by your business outcomes and goals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Reviews Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="#F59E0B"><polygon points="10 1.5 12.59 6.75 18.38 7.59 14.19 11.67 15.18 17.43 10 14.71 4.82 17.43 5.81 11.67 1.62 7.59 7.41 6.75 10 1.5"></polygon></svg>
+              FEEDBACK
+            </span>
+            <h2 class="headline-lg">CLIENT REVIEWS</h2>
+            <p class="subheadline">Realistic client feedback demonstrating our commitment to quality.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="feature-card">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <span class="review-rating-score">5.0</span>
+              </div>
+              <p style="font-style:italic; color:var(--text-charcoal); margin-bottom:1.5rem; font-size:0.95rem;">
+                "MANOHAR SOLUTIONS understood the requirements clearly and created a clean, professional website."
+              </p>
+              <div style="border-top:1px solid var(--border-stone); padding-top:1rem;">
+                <strong style="display:block; font-size:0.9rem;">Rahul Sharma</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Founder · Sharma Retail</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <span class="review-rating-score">5.0</span>
+              </div>
+              <p style="font-style:italic; color:var(--text-charcoal); margin-bottom:1.5rem; font-size:0.95rem;">
+                "The landing page created by MANOHAR SOLUTIONS increased our inquiries noticeably. Fast, clean, and mobile-friendly."
+              </p>
+              <div style="border-top:1px solid var(--border-stone); padding-top:1rem;">
+                <strong style="display:block; font-size:0.9rem;">Priya Nair</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Director · Aura Wellness</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#F59E0B"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <span class="review-rating-score">5.0</span>
+              </div>
+              <p style="font-style:italic; color:var(--text-charcoal); margin-bottom:1.5rem; font-size:0.95rem;">
+                "From our first discussion to launch, everything was delivered on schedule with exceptional attention to detail."
+              </p>
+              <div style="border-top:1px solid var(--border-stone); padding-top:1rem;">
+                <strong style="display:block; font-size:0.9rem;">Aditya Verma</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Principal · Verma Visuals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="cta-banner">
+            <span class="eyebrow">LET'S BUILD</span>
+            <h2 class="headline-lg" style="margin-bottom: 1rem;">READY TO BUILD YOUR WEBSITE?</h2>
+            <p class="subheadline" style="margin: 0 auto 2.5rem; max-width: 540px;">
+              Let's create a professional online presence for your business.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">START A PROJECT</a>
+              <a href="contact.html" class="btn btn-white">CONTACT ME</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Black Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Social Icons -->
+          <div class="footer-col">
+            <div class="brand-link" style="margin-bottom: 1.25rem;">
+              <div class="brand-monogram" style="background:#1F1F1D;">
+              <img src="assets/images/logo.png" alt="MS Logo" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="brand-text">
+                <span class="brand-name" style="color:#FFF;">MANOHAR <span>SOLUTIONS</span></span>
+                <span class="brand-sub" style="color:#8E8A83;">Professional Web Development</span>
+              </div>
+            </div>
+            <p style="color:#9E9B94; font-size:0.875rem; max-width:340px; line-height:1.6; margin-bottom: 1.25rem;">
+              Independent freelance studio creating professional, responsive websites for businesses, brands, and individuals.
+            </p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/manohar_solutions/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/manoharsolutions" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.72a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/918019923533" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div class="footer-col">
+            <h4>NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Services -->
+          <div class="footer-col">
+            <h4>SERVICES</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Responsive Websites</a></li>
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <li><a href="services.html">Portfolio Websites</a></li>
+              <li><a href="services.html">Website Redesign</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact Details with Icons -->
+          <div class="footer-col">
+            <h4>GET IN TOUCH</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <span style="font-size:0.75rem; color:#6C6963; text-transform:uppercase; letter-spacing:0.05em; display:block;">Email Directly</span>
+                  <a href="mailto:singampallimanohar6@gmail.com">singampallimanohar6@gmail.com</a>
+                </div>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <span style="font-size:0.75rem; color:#6C6963; text-transform:uppercase; letter-spacing:0.05em; display:block;">WhatsApp / Phone</span>
+                  <a href="https://wa.me/918019923533" target="_blank" rel="noopener noreferrer">+91 80199 23533</a>
+                </div>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <div>
+                  <span style="font-size:0.75rem; color:#6C6963; text-transform:uppercase; letter-spacing:0.05em; display:block;">Studio Location</span>
+                  <span>Visakhapatnam, AP, India · Remote Worldwide</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 MANOHAR SOLUTIONS. All rights reserved.</span>
+          <span>Crafted with pure HTML5, CSS3, & JavaScript.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA Button -->
+    <a href="https://wa.me/918019923533?text=Hello%20MANOHAR%20STUDIO%2C%20I%20would%20like%20to%20discuss%20a%20website%20project." class="whatsapp-floating" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+      </svg>
+    </a>
+
+    <!-- Core Script -->
+    <script  src="js/script.js"></script>
+  </body>
+</html>
