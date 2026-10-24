@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-# Production Domain Configuration:
-# Update the URL below once your production domain is active.
-Sitemap: https://manoharsolutions.dev/sitemap.xml
