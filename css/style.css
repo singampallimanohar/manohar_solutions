@@ -1382,4 +1382,187 @@ button, input, select, textarea {
   }
 }
 
+/* ==========================================================================
+   ACCESSIBILITY & FOCUS STATES
+   ========================================================================== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-terracotta);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   LAYOUT UTILITIES & RESPONSIVE FIXES
+   ========================================================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.services-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cs-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: var(--bg-stone);
+  border: 1px solid var(--border-stone);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.cs-qa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .contact-grid,
+  .about-grid,
+  .services-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .cs-metrics-grid,
+  .cs-qa-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .section {
+    padding: 3.5rem 0;
+  }
+  .container, .container-narrow {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.7rem;
+  }
+  .headline-xl {
+    font-size: 2rem;
+  }
+  .headline-lg {
+    font-size: 1.65rem;
+  }
+}
+
+/* ==========================================================================
+   PROJECT ESTIMATOR COMPONENT
+   ========================================================================== */
+.estimator-wrapper {
+  background: var(--bg-stone);
+  border: 1px solid var(--border-stone);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.estimator-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+}
+
+.estimator-pill-label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.estimator-pill-label input[type="radio"],
+.estimator-pill-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.estimator-pill-card {
+  padding: 0.85rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid var(--border-stone);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-charcoal);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.estimator-pill-card span.meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.estimator-pill-label input:checked + .estimator-pill-card {
+  border-color: var(--accent-terracotta);
+  background: #FAF6EF;
+  color: var(--accent-terracotta);
+  box-shadow: 0 0 0 2px var(--accent-terracotta);
+}
+
+.estimator-result-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-stone);
+  border-radius: 14px;
+  padding: 1.75rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .estimator-wrapper {
+    padding: 1.5rem;
+  }
+  .estimator-result-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .estimator-result-box a {
+    width: 100%;
+  }
+}
+
+
 

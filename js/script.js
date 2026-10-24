@@ -1,11 +1,18 @@
 /**
- * MANOHAR SOLUTIONS / MANOHAR SOLUTIONS
+ * MANOHAR SOLUTIONS
  * Pure Vanilla JavaScript Module
- * Handles dynamic case-studies, portfolio filtering, FAQ toggles, mobile navigation, and contact forms.
+ * Handles dynamic case-studies, portfolio filtering, FAQ accordions,
+ * mobile navigation drawer, interactive scope estimator, and WhatsApp contact integration.
  */
 
 // Central Studio Data & Config
 const STUDIO_DATA = {
+  config: {
+    whatsappNumber: "919391461106",
+    displayPhone: "+91 9391461106",
+    email: "singampallimanohar6@gmail.com",
+    brandName: "MANOHAR SOLUTIONS"
+  },
   projects: [
     {
       id: "glamora",
@@ -13,19 +20,20 @@ const STUDIO_DATA = {
       title: "GLAMORA",
       category: "Fashion / Beauty Website",
       filterCategory: "E-COMMERCE / PRODUCT",
-      tag: "E-COMMERCE",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A modern and elegant website concept designed for a luxury fashion and beauty brand, prioritizing editorial aesthetics and mobile fluidity.",
       image: "assets/images/glamora_fashion_showcase_1790489146985.jpg",
       tags: ["Lookbook UX", "Product Grid", "Sub-second Transitions", "Mobile-First"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "Glamora required an elevated digital presence reflecting luxury editorial aesthetics while providing seamless shopping journeys on desktop and mobile devices. The challenge was displaying high-resolution runway imagery without compromising mobile bandwidth.",
-        clientInfo: "Glamora Atelier & Beauty — A contemporary high-fashion and skincare label.",
+        overview: "Glamora represents an elevated digital storefront concept reflecting luxury editorial aesthetics while providing seamless shopping journeys on desktop and mobile devices. The architectural focus is displaying high-resolution runway imagery without compromising mobile bandwidth.",
+        clientInfo: "Glamora Atelier & Beauty — Concept design prototype for luxury retail & cosmetics.",
         goals: [
           "Craft a refined, editorial-grade visual lookbook experience.",
-          "Ensure seamless, lag-free mobile browsing for global shoppers.",
+          "Ensure seamless, lag-free mobile browsing across varying network speeds.",
           "Highlight curated seasonal collections with minimalist product cards.",
           "Achieve sub-second page transitions and rapid visual rendering."
         ],
@@ -41,16 +49,16 @@ const STUDIO_DATA = {
         ],
         responsiveDesign: "Tested from 320px smartphone displays up to 4K ultra-wide monitors, ensuring flawless typography readability and image proportions at all breakpoints.",
         technologies: ["HTML5", "CSS3 Grid/Flexbox", "Vanilla JavaScript", "Responsive Design", "Performance Tuning"],
-        finalResult: "A sleek, conversion-ready fashion portal that positioned Glamora as a premier luxury label with an average 68% lift in user engagement and 98/100 Lighthouse score.",
+        finalResult: "A clean, conversion-ready fashion concept demonstrating sub-second loading speeds, lightweight asset bundling, and 98/100 Lighthouse benchmark performance.",
         metrics: [
-          { label: "Mobile Page Load", value: "0.8s" },
-          { label: "Performance Score", value: "98/100" },
-          { label: "Engagement Lift", value: "+68%" }
+          { label: "Target Load Time", value: "< 1.0s" },
+          { label: "Lighthouse Target", value: "98/100" },
+          { label: "Responsive QA", value: "320px–4K" }
         ],
         testimonial: {
-          quote: "[Client Review Placeholder]",
-          author: "Sophia Varma",
-          role: "[Client Title/Company]"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     },
@@ -60,16 +68,17 @@ const STUDIO_DATA = {
       title: "HARI NATURALS",
       category: "Natural Products Website",
       filterCategory: "E-COMMERCE / PRODUCT",
-      tag: "ORGANIC STORE",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A clean product-focused website concept for an organic skincare and botanical remedies brand with direct WhatsApp ordering.",
       image: "assets/images/hari_naturals_showcase_1790489158642.jpg",
       tags: ["WhatsApp Orders", "Botanical Catalog", "Trust Badges", "Organic Aesthetic"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "Hari Naturals crafts organic botanical remedies and clean skincare. The goal was to establish brand trust through transparent product stories and an earthy, pristine aesthetic with frictionless ordering via WhatsApp.",
-        clientInfo: "Hari Naturals Wellness Co. — Organic botanicals and conscious personal care.",
+        overview: "Hari Naturals crafts organic botanical remedies and clean skincare. The concept demonstrates how to establish brand trust through transparent product stories and an earthy, pristine aesthetic with frictionless ordering via WhatsApp click-to-chat.",
+        clientInfo: "Hari Naturals Wellness Co. — Concept design prototype for organic personal care.",
         goals: [
           "Communicate ingredient purity and sustainable sourcing clearly.",
           "Create an intuitive product discovery experience for natural wellness seekers.",
@@ -81,23 +90,23 @@ const STUDIO_DATA = {
         keyFeatures: [
           "Direct WhatsApp ordering integration with pre-filled cart specs",
           "Interactive botanical ingredient explorer with accordion breakdowns",
-          "Customer verified review showcases with 5-star badges",
+          "Customer review showcase placeholders with trust badges",
           "Frictionless mobile one-page order inquiry form",
           "Organized product categorization for skin, hair, and wellness",
           "Fast loading across mobile networks with low data usage"
         ],
         responsiveDesign: "Engineered mobile-first with thumb-friendly touch targets, sticky purchase inquiries, and responsive product grids across smartphones, tablets, and desktops.",
         technologies: ["HTML5", "CSS3", "JavaScript", "WhatsApp API", "Mobile UX"],
-        finalResult: "A tranquil, high-trust storefront that elevated the brand from artisanal craft to an established digital presence with a 42% increase in direct inquiries.",
+        finalResult: "A tranquil, high-trust storefront concept demonstrating frictionless WhatsApp consultation and streamlined ordering without complex e-commerce backend overhead.",
         metrics: [
-          { label: "Inquiry Conversion", value: "+42%" },
-          { label: "Bounce Rate", value: "24%" },
-          { label: "Lighthouse Score", value: "99/100" }
+          { label: "WhatsApp Funnel", value: "Direct" },
+          { label: "Mobile First", value: "100%" },
+          { label: "Lighthouse Target", value: "99/100" }
         ],
         testimonial: {
-          quote: "[Client Review Placeholder]",
-          author: "[Client Name]",
-          role: "[Client Title/Company]"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     },
@@ -107,23 +116,24 @@ const STUDIO_DATA = {
       title: "PHOTOGRAPHY STUDIO",
       category: "Photography Website",
       filterCategory: "PORTFOLIO",
-      tag: "VISUAL PORTFOLIO",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A minimalist visual showcase designed for commercial photographers, featuring immersive galleries, client proofing, and project booking.",
       image: "assets/images/photo_studio_showcase_1790489179075.jpg",
       tags: ["Immersive Lightbox", "Categorized Albums", "Booking Funnel", "Ultra-fast CDN"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "A portfolio platform designed for an architectural and portrait photographer requiring gallery presentation, high-resolution imagery preservation, and client booking inquiry flows without lag.",
-        clientInfo: "Kiran Rao Visuals — Architectural & Editorial Studio.",
+        overview: "A portfolio platform designed for architectural and portrait photography requiring high-definition imagery presentation, subtle typographic restraint, and client booking inquiry flows without lag.",
+        clientInfo: "Architectural & Editorial Visual Studio — Concept design prototype for creative professionals.",
         goals: [
           "Showcase high-resolution portfolio albums without sacrificing loading speed.",
           "Provide a minimal, distraction-free viewing experience that honors visual craft.",
           "Streamline client project bookings, date checks, and rate inquiries."
         ],
         designApproach: "A minimalist monochrome and warm charcoal visual canvas where photography remains the hero. Typographic details are understated and borders are razor-thin.",
-        developmentApproach: "Adaptive image loading, custom lightbox modal, touch gesture gallery navigation, and accessible inquiry routing with pure vanilla JavaScript.",
+        developmentApproach: "Adaptive image loading, touch gesture gallery navigation, and accessible inquiry routing engineered with pure vanilla JavaScript.",
         keyFeatures: [
           "Full-screen immersive image inspection modal",
           "Categorized photo galleries (Architecture, Portraits, Editorial, Travel)",
@@ -134,16 +144,16 @@ const STUDIO_DATA = {
         ],
         responsiveDesign: "Seamless pinch-and-tap mobile viewing experience with responsive columns adapting from 1 column on mobile to 3 columns on wide screens.",
         technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Grid", "Performance Tuning"],
-        finalResult: "An exhibition-grade digital gallery that booked out the studio calendar for 4 consecutive quarters with an average page load time under 1.1s.",
+        finalResult: "An exhibition-grade digital gallery concept designed to present creative portfolios with editorial elegance and instant page load speeds under 1.1s.",
         metrics: [
-          { label: "Inquiry Rate", value: "+54%" },
-          { label: "Image Load Time", value: "<1.1s" },
-          { label: "Client Bookings", value: "4 Quarters" }
+          { label: "Image Optimization", value: "WebP" },
+          { label: "Target Load Time", value: "< 1.1s" },
+          { label: "Keyboard Nav", value: "Enabled" }
         ],
         testimonial: {
-          quote: "Finding a developer who understands both aesthetics and technical performance is rare. Manohar delivered an architectural portfolio that books clients effortlessly.",
-          author: "[Client Name]",
-          role: "Principal Photographer"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     },
@@ -153,20 +163,21 @@ const STUDIO_DATA = {
       title: "BUSINESS WEBSITE",
       category: "Business Website",
       filterCategory: "BUSINESS",
-      tag: "CORPORATE PORTAL",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A corporate web portal built for advisory and consulting services, featuring clear value propositions, case studies, and meeting scheduling.",
       image: "assets/images/corporate_business_showcase_1790489194491.jpg",
       tags: ["Executive RFP", "Advisory Services", "Lighthouse 99", "Lead Generation"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "A corporate presence designed for an advisory and management consulting practice seeking to establish authority, articulate specialized service offerings, and capture high-value enterprise leads.",
-        clientInfo: "Vanguard Partners — Strategic Corporate Advisory.",
+        overview: "A corporate digital presence designed for advisory and management consulting practices seeking to establish authority, articulate specialized service offerings, and capture high-value prospective client leads.",
+        clientInfo: "Corporate Advisory & Consulting — Concept design prototype for B2B enterprises.",
         goals: [
-          "Position the firm as an authoritative market leader in business advisory.",
+          "Position the business as an authoritative, trustworthy leader in professional services.",
           "Structure complex multi-disciplinary advisory services into digestible propositions.",
-          "Provide direct scheduling and lead capture for prospective corporate clients."
+          "Provide direct scheduling and inquiry capture for prospective corporate clients."
         ],
         designApproach: "Clean executive layout featuring warm stone cards, charcoal body text, terracotta action triggers, and structured typographic hierarchy.",
         developmentApproach: "Clean semantic markup, compliant accessibility, interactive service cost estimation, and rapid form submission validation.",
@@ -178,18 +189,18 @@ const STUDIO_DATA = {
           "Multi-location contact points with timezone indicators",
           "WCAG AA compliance for accessibility and readability"
         ],
-        responsiveDesign: "Designed for corporate executives reviewing proposals across iPad tablets, MacBook laptops, and executive mobile devices.",
+        responsiveDesign: "Designed for corporate executives reviewing proposals across tablet computers, laptops, and mobile devices.",
         technologies: ["HTML5", "CSS3", "JavaScript", "Accessible Forms", "SEO Best Practices"],
-        finalResult: "A distinguished corporate website that elevated client inbound acquisition by 75% within 90 days of launch.",
+        finalResult: "A distinguished corporate website concept establishing commercial authority with clean navigation, rapid responsiveness, and clear lead capture pathways.",
         metrics: [
-          { label: "Lead Inbound", value: "+75%" },
-          { label: "Avg Session Duration", value: "3m 40s" },
-          { label: "Lighthouse Score", value: "99/100" }
+          { label: "Structure", value: "B2B Lead" },
+          { label: "Accessibility", value: "WCAG AA" },
+          { label: "Lighthouse Target", value: "99/100" }
         ],
         testimonial: {
-          quote: "Our corporate inbound inquiries skyrocketed. Prospective enterprise clients take us far more seriously with this polished, authority-building platform.",
-          author: "Rajesh Kulkarni",
-          role: "Managing Partner, Vanguard"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     },
@@ -199,44 +210,45 @@ const STUDIO_DATA = {
       title: "APEX SAAS SUITE",
       category: "Landing Page Development",
       filterCategory: "LANDING PAGE",
-      tag: "HIGH CONVERSION",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A conversion-focused single page website with interactive pricing tiers, feature breakdowns, and frictionless signup pathways.",
       image: "assets/images/apex_saas_showcase_1790492518054.jpg",
       tags: ["Interactive Pricing", "Live Telemetry", "SaaS Conversion", "Sub-0.7s Load"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "Apex Cloud provides developer infrastructure telemetry and real-time monitoring. They needed a high-conversion landing page that demystifies complex developer metrics and drives free trial signups.",
-        clientInfo: "Apex Cloud Technologies — B2B developer observability platform.",
+        overview: "Apex Cloud demonstrates a modern developer infrastructure product landing page. The goal is illustrating how to demystify complex technical features into simple, compelling value propositions that maximize conversion.",
+        clientInfo: "Developer Tooling & Cloud Telemetry — Concept design prototype for software products.",
         goals: [
-          "Convey complex developer telemetry in simple, compelling product visuals.",
-          "Maximize trial conversion rates with interactive tier pricing calculator.",
+          "Convey technical features in clear, compelling product visuals.",
+          "Maximize trial conversion rates with an interactive tier pricing calculator.",
           "Achieve sub-second First Contentful Paint (<0.7s) on desktop & mobile.",
           "Implement seamless onboarding inquiry integration."
         ],
-        designApproach: "High-contrast dark-mode interface paired with warm charcoal surfaces, vibrant terracotta telemetry data charts, and clean monospaced accent typography.",
+        designApproach: "High-contrast dark-mode interface paired with warm charcoal surfaces, vibrant terracotta accents, and clean monospaced typography.",
         developmentApproach: "Pure vanilla JavaScript for zero-lag tab transitions, lightweight SVG charts, micro-animations, and accessible modal dialogues with no bloated JS frameworks.",
         keyFeatures: [
           "Interactive monthly vs annual pricing calculator toggle",
           "Live interactive telemetry demo simulation",
           "Detailed feature comparison matrix table",
           "Sub-second frictionless signup modal dialogue",
-          "Customer trust ticker with leading tech brand logos",
+          "Customer trust ticker with technology partner badges",
           "Instant FAQ drawer with keyboard accessibility"
         ],
-        responsiveDesign: "Engineered and validated across high-DPI retina displays, iPad Pro landscape, and Android/iOS viewports with thumb-optimized CTA sticky bar.",
+        responsiveDesign: "Engineered and validated across high-DPI retina displays, iPad Pro landscape, and mobile viewports with thumb-optimized CTA sticky bar.",
         technologies: ["HTML5", "CSS3 Grid/Flex", "Vanilla JS", "SVG Data Graphics", "Conversion CRO"],
-        finalResult: "Achieved an 82% boost in developer signups within 30 days of launch, with an average page load time of 0.6 seconds and 99/100 Lighthouse score.",
+        finalResult: "A high-impact landing page concept showcasing conversion design principles, sub-second initial paint times, and lightweight code architecture.",
         metrics: [
-          { label: "Trial Conversion", value: "+82%" },
-          { label: "Page Speed", value: "99/100" },
-          { label: "Time to Interactive", value: "0.6s" }
+          { label: "Architecture", value: "Zero Bloat" },
+          { label: "Page Speed Target", value: "99/100" },
+          { label: "Time to Interactive", value: "< 0.7s" }
         ],
         testimonial: {
-          quote: "Manohar transformed our developer tooling product into an irresistible, crystal-clear value proposition. Our trial conversion doubled immediately.",
-          author: "Arjun Mehta",
-          role: "Co-Founder, Apex Cloud"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     },
@@ -246,21 +258,22 @@ const STUDIO_DATA = {
       title: "URBAN LINE ARCHITECTS",
       category: "Architecture & Design",
       filterCategory: "BUSINESS",
-      tag: "SPATIAL SHOWCASE",
+      tag: "CONCEPT SHOWCASE",
       shortDescription: "A clean, spatial portfolio representing high-end residential architecture with blueprint specs, project archives, and consultation inquiry.",
       image: "assets/images/architects_showcase_1790492543106.jpg",
       tags: ["Spatial Layout", "Blueprint Overlays", "Editorial Grid", "Retina Displays"],
       hasCaseStudy: true,
       demoUrl: "",
+      isConceptDemo: true,
 
       caseStudy: {
-        overview: "Urban Line Architects crafts bespoke residential villas and commercial spaces. The digital portfolio needed to embody architectural precision, geometric balance, and tactile spatial harmony.",
-        clientInfo: "Urban Line Architecture Studio — Contemporary residential and spatial design practice.",
+        overview: "Urban Line Architects models a digital portfolio for architectural studios. The design embodies architectural precision, geometric balance, and tactile spatial harmony.",
+        clientInfo: "Spatial Design & Architecture Practice — Concept design prototype for design studios.",
         goals: [
-          "Mirror the studio's architectural philosophy of elegance, geometry, and restraint.",
+          "Mirror architectural philosophies of elegance, geometry, and restraint.",
           "Enable seamless navigation between residential, commercial, and landscape projects.",
-          "Provide deep-dive project case sheets with blueprint drawings and material specs.",
-          "Facilitate consultation bookings with high-net-worth clients."
+          "Provide project case sheets with blueprint drawings and material specs.",
+          "Facilitate consultation bookings with prospective clients."
         ],
         designApproach: "Warm stone textures, generous editorial margins, architectural grid lines, and high-impact structural photography with subtle hover elevations.",
         developmentApproach: "Pure CSS grid layout, responsive typography scaling (clamp), smooth scroll anchors, and progressive image loading for architectural photographs.",
@@ -274,16 +287,16 @@ const STUDIO_DATA = {
         ],
         responsiveDesign: "Built to look stunning on executive boardroom displays (4K), iPad tablets for client meetings, and mobile devices with zero layout shift.",
         technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Editorial Grid", "SEO Schema"],
-        finalResult: "Secured 5 major residential villa commissions within the first quarter following the digital studio relaunch with a 65% increase in qualified inquiries.",
+        finalResult: "A sophisticated studio concept demonstrating spatial layout balance, high-resolution architectural photo rendering, and intuitive client consultation inquiry.",
         metrics: [
-          { label: "Client Inquiries", value: "+65%" },
-          { label: "Avg View Time", value: "4m 12s" },
+          { label: "Visual Grid", value: "Editorial" },
+          { label: "Layout Shift", value: "0.0 CLS" },
           { label: "Mobile Performance", value: "98/100" }
         ],
         testimonial: {
-          quote: "The website feels like walking through one of our curated spaces—balanced, spacious, and crafted with meticulous attention to detail.",
-          author: "Vikram Singhania",
-          role: "Principal Architect, Urban Line"
+          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
+          author: "[Client Name Placeholder]",
+          role: "[Client Title / Company]"
         }
       }
     }
@@ -297,7 +310,7 @@ if (typeof window !== 'undefined') {
     const nextUrl = `casestudy.html?project=${projectId}`;
     const caseStudyContainer = document.getElementById('case-study-content');
     const targetProject = STUDIO_DATA.projects.find(p => p.id === projectId);
-    
+
     if (caseStudyContainer && targetProject) {
       window.history.pushState({ project: projectId }, '', nextUrl);
       renderCaseStudy(caseStudyContainer, targetProject);
@@ -315,6 +328,7 @@ function initApp() {
   initProjectsFilter();
   initCaseStudyLoader();
   initContactForm();
+  initProjectEstimator();
 }
 
 if (document.readyState === 'loading') {
@@ -344,6 +358,10 @@ function initNavbar() {
   function openNavDrawer() {
     if (drawer) {
       drawer.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      if (hamburger) {
+        hamburger.setAttribute('aria-expanded', 'true');
+      }
       document.body.style.overflow = 'hidden';
     }
   }
@@ -351,11 +369,16 @@ function initNavbar() {
   function closeNavDrawer() {
     if (drawer) {
       drawer.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      if (hamburger) {
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
       document.body.style.overflow = '';
     }
   }
 
   if (hamburger) {
+    hamburger.setAttribute('aria-expanded', 'false');
     hamburger.addEventListener('click', openNavDrawer);
   }
 
@@ -387,7 +410,7 @@ function initNavbar() {
   });
 }
 
-// 2. FAQ Accordion for Services Page
+// 2. FAQ Accordion
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
   if (!faqItems.length) return;
@@ -395,11 +418,19 @@ function initFaqAccordion() {
   faqItems.forEach((item) => {
     const questionBtn = item.querySelector('.faq-question');
     if (questionBtn) {
+      const isInitiallyActive = item.classList.contains('active');
+      questionBtn.setAttribute('aria-expanded', isInitiallyActive ? 'true' : 'false');
+
       questionBtn.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        faqItems.forEach(i => i.classList.remove('active'));
+        faqItems.forEach(i => {
+          i.classList.remove('active');
+          const btn = i.querySelector('.faq-question');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
         if (!isActive) {
           item.classList.add('active');
+          questionBtn.setAttribute('aria-expanded', 'true');
         }
       });
     }
@@ -446,7 +477,6 @@ function initCaseStudyLoader() {
 
     const project = STUDIO_DATA.projects.find(p => p.id === projectId);
     if (!project || !project.caseStudy) {
-      // If invalid ID passed, fall back to first project with notification
       renderCaseStudy(caseStudyContainer, STUDIO_DATA.projects[0]);
       return;
     }
@@ -469,7 +499,6 @@ function renderCaseStudy(container, project) {
 
   // Other projects for the bottom "More Projects" section
   const otherProjects = allProjects.filter(p => p.id !== project.id).slice(0, 3);
-
 
   const getTechIcon = (name) => {
     const l = name.toLowerCase();
@@ -495,7 +524,7 @@ function renderCaseStudy(container, project) {
           BACK TO ALL PROJECTS
         </a>
         <div style="display: flex; align-items: center; gap: 0.75rem;">
-          <span class="tag-badge" style="position: static; background: var(--bg-stone); color: var(--accent-terracotta); border-color: var(--border-stone); font-size: 0.7rem;">${project.tag || 'CASE STUDY'}</span>
+          <span class="tag-badge" style="position: static; background: var(--bg-stone); color: var(--accent-terracotta); border-color: var(--border-stone); font-size: 0.7rem;">${project.tag || 'CONCEPT SHOWCASE'}</span>
           <span style="font-family: monospace; font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">PROJECT ${project.number} / 06</span>
         </div>
       </div>
@@ -517,14 +546,14 @@ function renderCaseStudy(container, project) {
       <header style="margin-bottom: 3rem;">
         <span class="eyebrow">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-          ${project.category}
+          ${project.category} · Concept Design Showcase
         </span>
         <h1 class="headline-xl">${project.title}</h1>
         <p class="subheadline" style="font-size: 1.25rem; margin-bottom: 2rem;">${project.shortDescription}</p>
 
-        <!-- Metrics Banner -->
+        <!-- Metrics Banner (Responsive CSS Grid) -->
         ${cs.metrics && cs.metrics.length ? `
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 16px; padding: 1.75rem; margin-bottom: 2.5rem;">
+          <div class="cs-metrics-grid">
             ${cs.metrics.map(m => `
               <div>
                 <span style="display: block; font-family: monospace; font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: var(--accent-terracotta);">${m.value}</span>
@@ -540,10 +569,10 @@ function renderCaseStudy(container, project) {
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
-            <span style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted); margin-left: 0.5rem; letter-spacing: 0.04em;">${project.demoUrl ? project.demoUrl : 'Local / Concept Prototype'}</span>
+            <span style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted); margin-left: 0.5rem; letter-spacing: 0.04em;">${project.title.toLowerCase().replace(/\s+/g, '-')}.concept.manoharsolutions.local</span>
           </div>
           <div style="aspect-ratio: 16 / 9; overflow: hidden;">
-            <img src="${project.image}" alt="${project.title} Full Website Showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+            <img src="${project.image}" alt="${project.title} Full Website Showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;" loading="eager">
           </div>
         </div>
       </header>
@@ -556,10 +585,10 @@ function renderCaseStudy(container, project) {
           <div>
             <h2 class="eyebrow" style="font-size: 0.85rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-              OVERVIEW & CLIENT
+              OVERVIEW &amp; SCOPE
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_overview_client_1790497922576.jpg" alt="Client concept & project dossier"   />
+              <img src="assets/images/cs_overview_client_1790497922576.jpg" alt="Client concept &amp; project dossier" loading="lazy" decoding="async">
             </div>
           </div>
           <div>
@@ -567,7 +596,7 @@ function renderCaseStudy(container, project) {
             <div style="padding: 1.25rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 12px; font-size: 0.95rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.75rem;">
               <div style="width: 38px; height: 38px; border-radius: 8px; background: #FFFFFF; border: 1px solid var(--border-stone); display: flex; align-items: center; justify-content: center; color: var(--accent-terracotta); font-weight: bold; flex-shrink: 0;">🏢</div>
               <div>
-                <strong style="color: var(--text-charcoal); display: block;">Client / Project Concept:</strong>
+                <strong style="color: var(--text-charcoal); display: block;">Project Concept &amp; Domain:</strong>
                 <span>${cs.clientInfo}</span>
               </div>
             </div>
@@ -582,7 +611,7 @@ function renderCaseStudy(container, project) {
               PROJECT GOALS
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_project_goals_1790497937814.jpg" alt="Project goals and wireframes"   />
+              <img src="assets/images/cs_project_goals_1790497937814.jpg" alt="Project goals and wireframes" loading="lazy" decoding="async">
             </div>
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
@@ -600,10 +629,10 @@ function renderCaseStudy(container, project) {
           <div>
             <h2 class="eyebrow" style="font-size: 0.85rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-              DESIGN & DEV
+              DESIGN &amp; DEV
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_design_dev_1790497951833.jpg" alt="Design system and code engineering"   />
+              <img src="assets/images/cs_design_dev_1790497951833.jpg" alt="Design system and code engineering" loading="lazy" decoding="async">
             </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 1.5rem;">
@@ -615,7 +644,7 @@ function renderCaseStudy(container, project) {
             </div>
             <div style="background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 14px; padding: 1.5rem;">
               <h3 class="headline-md" style="font-size: 1.15rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                <span style="color: var(--accent-terracotta);">⚡</span> Engineering & Implementation
+                <span style="color: var(--accent-terracotta);">⚡</span> Front-End Architecture
               </h3>
               <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65;">${cs.developmentApproach}</p>
             </div>
@@ -630,7 +659,7 @@ function renderCaseStudy(container, project) {
               KEY CAPABILITIES
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_key_capabilities_1790497963224.jpg" alt="Interactive component capabilities"   />
+              <img src="assets/images/cs_key_capabilities_1790497963224.jpg" alt="Interactive component capabilities" loading="lazy" decoding="async">
             </div>
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.85rem;">
@@ -651,7 +680,7 @@ function renderCaseStudy(container, project) {
               TECH STACK
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_tech_stack_1790497975099.jpg" alt="Modern web technology stack"   />
+              <img src="assets/images/cs_tech_stack_1790497975099.jpg" alt="Modern web technology stack" loading="lazy" decoding="async">
             </div>
           </div>
           <div style="display: flex; flex-wrap: wrap; gap: 0.65rem;">
@@ -664,7 +693,7 @@ function renderCaseStudy(container, project) {
           </div>
         </section>
 
-        <!-- 6. Responsive Testing Breakpoints -->
+        <!-- 6. Responsive Testing Breakpoints (Responsive Grid) -->
         <section class="cs-section-grid">
           <div>
             <h2 class="eyebrow" style="font-size: 0.85rem;">
@@ -672,16 +701,16 @@ function renderCaseStudy(container, project) {
               MULTI-DEVICE QA
             </h2>
             <div class="cs-side-thumb">
-              <img src="assets/images/cs_multidevice_qa_1790497988417.jpg" alt="Multi-device responsive testing"   />
+              <img src="assets/images/cs_multidevice_qa_1790497988417.jpg" alt="Multi-device responsive testing" loading="lazy" decoding="async">
             </div>
           </div>
           <div>
             <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">${cs.responsiveDesign}</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem;">
+            <div class="cs-qa-grid">
               <div style="padding: 1.25rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 12px; text-align: center;">
                 <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">💻</span>
                 <strong style="display: block; font-size: 0.88rem; color: var(--text-charcoal);">Desktop Displays</strong>
-                <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">1440px – 4K Retina</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">1024px – 1440px+</span>
               </div>
               <div style="padding: 1.25rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 12px; text-align: center;">
                 <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📱</span>
@@ -691,33 +720,32 @@ function renderCaseStudy(container, project) {
               <div style="padding: 1.25rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 12px; text-align: center;">
                 <span style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;">📲</span>
                 <strong style="display: block; font-size: 0.88rem; color: var(--text-charcoal);">Mobile Phones</strong>
-                <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">320px – 425px</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">320px – 430px</span>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- 7. Outcome & Client Feedback -->
+        <!-- 7. Outcome & Benchmark -->
         <section style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div style="padding: 2.25rem; background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 16px;">
             <span class="eyebrow">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               THE OUTCOME
             </span>
-            <h2 class="headline-md" style="margin-bottom: 0.75rem;">Measurable Business Results</h2>
+            <h2 class="headline-md" style="margin-bottom: 0.75rem;">Quality &amp; Performance Standards</h2>
             <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">${cs.finalResult}</p>
           </div>
 
           ${cs.testimonial ? `
             <div class="cs-quote-card">
-              <div style="display: flex; align-items: center; gap: 0.25rem; color: #F59E0B; margin-bottom: 1rem;">
-                ${Array(5).fill('<svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>').join('')}
-                <span style="font-family: monospace; font-size: 0.8rem; font-weight: 700; color: #D97706; margin-left: 0.35rem; background: rgba(245, 158, 11, 0.15); padding: 0.1rem 0.4rem; border-radius: 4px;">5.0 RATING</span>
+              <div style="display: flex; align-items: center; gap: 0.4rem; color: var(--accent-terracotta); margin-bottom: 0.75rem;">
+                <span style="font-family: monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(200, 82, 40, 0.1); padding: 0.2rem 0.6rem; border-radius: 4px;">Verified Review Placeholder</span>
               </div>
               <p class="cs-quote-text">"${cs.testimonial.quote}"</p>
               <div style="display: flex; align-items: center; gap: 0.75rem;">
                 <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--text-charcoal); color: #FFF; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem;">
-                  ${cs.testimonial.author.charAt(0)}
+                  MS
                 </div>
                 <div>
                   <strong style="display: block; font-size: 0.95rem; color: var(--text-charcoal);">${cs.testimonial.author}</strong>
@@ -734,7 +762,7 @@ function renderCaseStudy(container, project) {
       <div class="cs-nav-grid">
         <a href="casestudy.html?project=${prevProject.id}" onclick="event.preventDefault(); switchCaseStudy('${prevProject.id}');" class="cs-nav-card prev-card">
           <div class="cs-nav-thumb">
-            <img src="${prevProject.image}" alt="${prevProject.title}">
+            <img src="${prevProject.image}" alt="${prevProject.title}" loading="lazy" decoding="async">
           </div>
           <div>
             <span style="font-size: 0.72rem; font-family: monospace; color: var(--accent-terracotta); font-weight: 700; display: block;">← PREVIOUS PROJECT</span>
@@ -745,7 +773,7 @@ function renderCaseStudy(container, project) {
 
         <a href="casestudy.html?project=${nextProject.id}" onclick="event.preventDefault(); switchCaseStudy('${nextProject.id}');" class="cs-nav-card next-card">
           <div class="cs-nav-thumb">
-            <img src="${nextProject.image}" alt="${nextProject.title}">
+            <img src="${nextProject.image}" alt="${nextProject.title}" loading="lazy" decoding="async">
           </div>
           <div>
             <span style="font-size: 0.72rem; font-family: monospace; color: var(--accent-terracotta); font-weight: 700; display: block;">NEXT PROJECT →</span>
@@ -763,7 +791,7 @@ function renderCaseStudy(container, project) {
         </div>
         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
           <a href="projects.html" class="btn btn-secondary">VIEW ALL PROJECTS</a>
-          <a href="contact.html?project=${project.id}" class="btn btn-primary">START A PROJECT →</a>
+          <a href="contact.html?project=${project.id}" class="btn btn-primary">START YOUR PROJECT →</a>
         </div>
       </div>
 
@@ -781,8 +809,8 @@ function renderCaseStudy(container, project) {
           ${otherProjects.map(op => `
             <div class="project-card" style="display: flex; flex-direction: column;">
               <a href="casestudy.html?project=${op.id}" onclick="event.preventDefault(); switchCaseStudy('${op.id}');" class="project-img-wrap" style="aspect-ratio: 16 / 10;">
-                <img src="${op.image}" alt="${op.title}" >
-                <span class="tag-badge">${op.tag || 'CASE STUDY'}</span>
+                <img src="${op.image}" alt="${op.title}" loading="lazy" decoding="async">
+                <span class="tag-badge">${op.tag || 'CONCEPT'}</span>
               </a>
               <div class="project-meta" style="padding: 1.25rem;">
                 <div class="project-meta-top" style="margin-bottom: 0.5rem;">
@@ -806,7 +834,7 @@ function renderCaseStudy(container, project) {
   `;
 }
 
-// 5. Contact Form Submission
+// 5. Contact Form Submission & WhatsApp Routing
 function initContactForm() {
   const form = document.getElementById('project-contact-form');
   const responseArea = document.getElementById('form-response');
@@ -825,25 +853,46 @@ function initContactForm() {
     }[tag] || tag));
   }
 
-  // Pre-fill project type if in URL
+  // Pre-fill project type or service if in URL
   const params = new URLSearchParams(window.location.search);
-  const prefill = params.get('project');
-  if (prefill) {
-    const select = document.getElementById('projectType');
-    if (select) {
-      if (prefill.includes('saas') || prefill.includes('landing')) {
-        select.value = 'Landing Page';
-      } else if (prefill.includes('photo') || prefill.includes('portfolio')) {
-        select.value = 'Portfolio Website';
-      } else if (prefill.includes('glamora') || prefill.includes('naturals') || prefill.includes('commerce')) {
-        select.value = 'Responsive Website';
-      } else {
-        select.value = 'Business Website';
+  const serviceParam = params.get('service');
+  const projectParam = params.get('project');
+  const budgetParam = params.get('budget');
+  const select = document.getElementById('projectType');
+  const budgetSelect = document.getElementById('budget');
+
+  if (serviceParam && select) {
+    const sLower = decodeURIComponent(serviceParam).toLowerCase();
+    for (let opt of select.options) {
+      if (opt.value.toLowerCase().includes(sLower) || sLower.includes(opt.value.toLowerCase())) {
+        select.value = opt.value;
+        break;
+      }
+    }
+  } else if (projectParam && select) {
+    const p = projectParam.toLowerCase();
+    if (p.includes('saas') || p.includes('landing')) {
+      select.value = 'Landing Page';
+    } else if (p.includes('photo') || p.includes('portfolio')) {
+      select.value = 'Portfolio Website';
+    } else if (p.includes('glamora') || p.includes('naturals') || p.includes('commerce')) {
+      select.value = 'Responsive Website';
+    } else {
+      select.value = 'Business Website';
+    }
+  }
+
+  if (budgetParam && budgetSelect) {
+    const bLower = decodeURIComponent(budgetParam).toLowerCase();
+    for (let opt of budgetSelect.options) {
+      if (opt.value.toLowerCase().includes(bLower)) {
+        budgetSelect.value = opt.value;
+        break;
       }
     }
   }
 
-  // Handle Form Submission -> Reliable backend submission via FormSubmit
+  // Handle Form Submission -> Prepares structured payload and launches WhatsApp
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
@@ -853,15 +902,40 @@ function initContactForm() {
     const budget = document.getElementById('budget').value;
     const message = document.getElementById('message').value.trim();
 
-    if (!name || !email || !phone || !message) {
-      responseArea.innerHTML = `<div style="padding: 0.85rem; border-radius: 8px; background: #FFF1F0; border: 1px solid #FFCCC7; color: #CF1322; font-size: 0.85rem; margin-bottom: 1rem;">Please provide your name, email, phone number, and project requirements.</div>`;
+    const showError = (msg) => {
+      responseArea.innerHTML = `
+        <div role="alert" style="padding: 0.85rem 1.15rem; border-radius: 8px; background: #FFF1F0; border: 1px solid #FFCCC7; color: #CF1322; font-size: 0.88rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-weight: bold;">✕</span>
+          <span>${msg}</span>
+        </div>`;
+      responseArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    if (!name) {
+      showError("Please enter your name.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      showError("Please enter a valid email address (e.g. name@company.com).");
+      return;
+    }
+
+    if (!phone || phone.length < 7) {
+      showError("Please enter a valid phone or WhatsApp number.");
+      return;
+    }
+
+    if (!message || message.length < 10) {
+      showError("Please describe your project requirements in at least 10 characters.");
       return;
     }
 
     const originalBtnContent = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
-    submitBtn.innerHTML = `<span>REDIRECTING TO WHATSAPP...</span>`;
+    submitBtn.innerHTML = `<span>PREPARING WHATSAPP INQUIRY...</span>`;
 
     const waPayload = `*NEW PROJECT INQUIRY - MANOHAR SOLUTIONS*
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -869,45 +943,69 @@ function initContactForm() {
 📧 *Email Address:* ${email}
 📱 *Phone / WhatsApp:* ${phone}
 💼 *Service Needed:* ${type}
-💰 *Budget Range:* ${budget}
+💰 *Estimated Budget:* ${budget}
 ━━━━━━━━━━━━━━━━━━━━━━
 📝 *Project Requirements:*
 ${message}
 ━━━━━━━━━━━━━━━━━━━━━━
-_Sent via Manohar Studio website_`;
-    const waUrl = `https://wa.me/918019923533?text=${encodeURIComponent(waPayload)}`;
+_Sent via Manohar Solutions website_`;
 
-    // Safely open WhatsApp immediately
-    window.open(waUrl, '_blank');
+    const waNumber = STUDIO_DATA.config.whatsappNumber;
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waPayload)}`;
 
-    // Hide form and display clean continuation message
+    // Open WhatsApp in a new tab
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+    // Display clear, honest instructions informing the user to tap Send in WhatsApp
     form.style.display = 'none';
     responseArea.innerHTML = `
       <div style="padding: 1.5rem 0; text-align: center;">
         <div style="width: 58px; height: 58px; border-radius: 50%; background: #25D366; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>
         </div>
         
-        <h3 class="headline-md" style="margin-bottom: 0.4rem;">Continuing in WhatsApp...</h3>
-        <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 440px; margin: 0 auto 1.5rem;">
-          Your inquiry is ready to be sent. If WhatsApp did not open automatically, please click the button below to continue.
+        <h3 class="headline-md" style="margin-bottom: 0.4rem;">Inquiry Ready for WhatsApp</h3>
+        <p style="color: var(--text-charcoal); font-size: 0.95rem; max-width: 460px; margin: 0 auto 0.75rem; font-weight: 500;">
+          Your inquiry details have been formatted and WhatsApp should have opened in a new tab.
         </p>
 
-        <!-- Big Primary WhatsApp Button -->
-        <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; padding: 1rem 1.25rem; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem; margin-bottom: 1.5rem; text-decoration: none;">
+        <!-- Critical honest notice as required by guidelines -->
+        <div style="background: #FFFBE6; border: 1px solid #FFE58F; border-radius: 10px; padding: 0.9rem 1.15rem; max-width: 480px; margin: 0 auto 1.5rem; text-align: left; font-size: 0.86rem; color: #873800; line-height: 1.55;">
+          <strong>Important Next Step:</strong> Opening WhatsApp does not send the message automatically. Please tap the <strong>Send button</strong> inside your WhatsApp chat window to deliver the message to Manohar Solutions.
+        </div>
+
+        <!-- Direct WhatsApp Action Button -->
+        <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; padding: 1rem 1.25rem; font-size: 0.95rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem; margin-bottom: 1.5rem; text-decoration: none;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
           </svg>
-          <span>OPEN WHATSAPP NOW (+91 80199 23533)</span>
+          <span>TAP HERE TO OPEN WHATSAPP (${STUDIO_DATA.config.displayPhone})</span>
         </a>
 
-
+        <!-- Summary Preview Box -->
+        <div style="background: var(--bg-stone); border: 1px solid var(--border-stone); border-radius: 12px; padding: 1.25rem; text-align: left; margin-bottom: 1.5rem; font-size: 0.88rem;">
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-terracotta); letter-spacing: 0.06em; margin-bottom: 0.65rem; border-bottom: 1px solid var(--border-stone); padding-bottom: 0.4rem;">
+            Prepared Inquiry Summary
+          </div>
+          <div style="display: grid; grid-template-columns: 110px 1fr; row-gap: 0.4rem;">
+            <span style="color: var(--text-muted); font-weight: 600;">Client:</span>
+            <strong>${escapeHtml(name)}</strong>
+            <span style="color: var(--text-muted); font-weight: 600;">Email:</span>
+            <span>${escapeHtml(email)}</span>
+            <span style="color: var(--text-muted); font-weight: 600;">Phone:</span>
+            <strong>${escapeHtml(phone)}</strong>
+            <span style="color: var(--text-muted); font-weight: 600;">Service:</span>
+            <span>${escapeHtml(type)}</span>
+            <span style="color: var(--text-muted); font-weight: 600;">Budget:</span>
+            <span>${escapeHtml(budget)}</span>
+          </div>
+        </div>
 
         <button type="button" id="reset-inquiry-form-btn" class="btn btn-white" style="font-size: 0.85rem; padding: 0.55rem 1.25rem; margin: 0 auto; display: block;">
-          ← Fill Out Another Request
+          ← Edit or Send Another Request
         </button>
       </div>
     `;
@@ -928,9 +1026,58 @@ _Sent via Manohar Studio website_`;
   });
 }
 
+// 6. Interactive Scope & Cost Estimator (Services / Inquiry helper)
+function initProjectEstimator() {
+  const estimatorContainer = document.getElementById('project-estimator');
+  if (!estimatorContainer) return;
 
+  const basePrices = {
+    'landing': { name: 'Landing Page', min: 15000, max: 25000, days: '4 – 7 business days' },
+    'business': { name: 'Business Website', min: 30000, max: 50000, days: '10 – 14 business days' },
+    'portfolio': { name: 'Portfolio Website', min: 22000, max: 35000, days: '7 – 10 business days' },
+    'ecommerce': { name: 'E-commerce / Store', min: 45000, max: 70000, days: '14 – 21 business days' }
+  };
 
+  const pageMultipliers = {
+    '1': 0,
+    '3-5': 5000,
+    '6-10': 12000,
+    '10+': 22000
+  };
 
+  function calculateEstimate() {
+    const selectedType = estimatorContainer.querySelector('input[name="est-type"]:checked')?.value || 'business';
+    const selectedPages = estimatorContainer.querySelector('input[name="est-pages"]:checked')?.value || '3-5';
+    const seoChecked = estimatorContainer.querySelector('input[name="est-seo"]')?.checked;
+    const whatsappChecked = estimatorContainer.querySelector('input[name="est-wa"]')?.checked;
 
+    const base = basePrices[selectedType] || basePrices.business;
+    const pageAdd = pageMultipliers[selectedPages] || 0;
+    const featureAdd = (seoChecked ? 4000 : 0) + (whatsappChecked ? 2500 : 0);
 
+    const minTotal = base.min + pageAdd + featureAdd;
+    const maxTotal = base.max + pageAdd + featureAdd;
 
+    const priceEl = document.getElementById('estimator-price');
+    const timelineEl = document.getElementById('estimator-timeline');
+    const ctaBtn = document.getElementById('estimator-cta-btn');
+
+    if (priceEl) {
+      priceEl.textContent = `₹${minTotal.toLocaleString('en-IN')} – ₹${maxTotal.toLocaleString('en-IN')}`;
+    }
+    if (timelineEl) {
+      timelineEl.textContent = base.days;
+    }
+    if (ctaBtn) {
+      const budgetQuery = encodeURIComponent(`₹${minTotal.toLocaleString('en-IN')} – ₹${maxTotal.toLocaleString('en-IN')}`);
+      const serviceQuery = encodeURIComponent(base.name);
+      ctaBtn.href = `contact.html?service=${serviceQuery}&budget=${budgetQuery}`;
+    }
+  }
+
+  estimatorContainer.querySelectorAll('input').forEach(input => {
+    input.addEventListener('change', calculateEstimate);
+  });
+
+  calculateEstimate();
+}
