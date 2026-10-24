@@ -90,40 +90,61 @@
 
   <main>
     <!-- 1. Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" aria-label="Introduction">
       <div class="container hero-grid">
-        <div>
-          <div class="badge-status">
-            <span class="badge-pulse"></span>
-            <span>Available for new projects · 2026</span>
+        <div class="hero-content">
+          <div class="badge-status hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            <span>MANOHAR SOLUTIONS | DIGITAL EXPERIENCES</span>
           </div>
-          <h1 class="headline-xl">BUILDING WEBSITES THAT HELP BUSINESSES GROW.</h1>
-          <p class="subheadline" style="margin-bottom: 2rem;">
-            I design and develop professional, responsive websites for businesses, brands, and individuals looking for clean design, fast load times, and dependable code.
+          <h1 class="headline-xl hero-headline">Your Business Deserves More Than Just a Website.</h1>
+          <p class="subheadline hero-description">
+            I design and develop modern, responsive websites that help businesses build trust, showcase their services, and connect with more customers.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="contact.html">Start Your Project</a>
-            <a class="btn btn-secondary" href="services.html">Explore Our Services</a>
+            <a class="btn btn-secondary" href="projects.html">Explore My Work</a>
           </div>
-          <div class="hero-stats">
-            <div class="stat-item">
+          <div class="hero-stats" role="list" aria-label="Key highlights">
+            <div class="stat-item" role="listitem">
+              <span class="stat-num">Bespoke</span>
+              <span class="stat-label">Handcrafted Clean Code</span>
+            </div>
+            <div class="stat-item" role="listitem">
               <span class="stat-num">100%</span>
-              <span class="stat-label">Responsive Layouts</span>
+              <span class="stat-label">Mobile Responsive</span>
             </div>
-            <div class="stat-item">
-              <span class="stat-num">Clean</span>
-              <span class="stat-label">Standards-Based Code</span>
-            </div>
-            <div class="stat-item">
+            <div class="stat-item" role="listitem">
               <span class="stat-num">Direct</span>
               <span class="stat-label">Freelance Support</span>
             </div>
           </div>
         </div>
-        <!-- Hero Visual Image -->
-        <div>
-          <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -10px rgba(20,20,19,0.1); border: 1px solid var(--border-stone); background: var(--bg-stone);">
-            <img alt="Manohar Web Development Studio Workspace" src="assets/images/manohar_studio_workspace_1790489209515.jpg" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 4/3;" loading="eager"/>
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-col">
+          <div class="hero-mockup-frame">
+            <div class="mockup-header-bar">
+              <div class="mockup-dots" aria-hidden="true">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-amber"></span>
+                <span class="mockup-dot dot-green"></span>
+              </div>
+              <div class="mockup-url-pill">
+                <svg class="url-lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>manoharsolutions.dev/showcase/corporate</span>
+              </div>
+              <div class="mockup-badge" aria-hidden="true">
+                <span class="status-live-dot"></span>
+                <span>Live Project</span>
+              </div>
+            </div>
+            <div class="mockup-screen-area">
+              <img src="assets/images/corporate_business_showcase_1790489194491.jpg" alt="Featured client website design and front-end development project by Manohar Solutions" width="800" height="600" loading="eager" fetchpriority="high" decoding="async">
+            </div>
+            <div class="mockup-footer-bar">
+              <span class="mockup-tag">FEATURED WORK</span>
+              <span class="mockup-title">Corporate Business Platform &bull; Bespoke Front-End</span>
+            </div>
           </div>
         </div>
       </div>
