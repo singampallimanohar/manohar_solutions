@@ -22,7 +22,7 @@ const STUDIO_DATA = {
       filterCategory: "RESTAURANT / FOOD",
       tag: "RESTAURANT WEBSITE",
       shortDescription: "A modern, premium restaurant website featuring a cinematic homepage, digital food menu, food gallery, restaurant information, and WhatsApp ordering interface. Located in Tuni, Andhra Pradesh.",
-      image: "assets/images/kings_biryani_showcase.jpg",
+      image: "assets/images/kings-biryani-home.png",
       tags: ["Restaurant Website", "WhatsApp Order", "Food Menu", "Photo Gallery"],
       hasCaseStudy: true,
       demoUrl: "",
@@ -53,13 +53,13 @@ const STUDIO_DATA = {
         responsiveDesign: "Optimised for all screen sizes from 320px mobile to 1440px desktop. Mobile navigation uses a slide-in drawer. The food menu grid reflows from 4-column to 2-column to 1-column based on screen width.",
         techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "Font Awesome Icons", "Google Fonts (Cinzel, Outfit)", "WhatsApp Business API"],
         images: {
-          main: "assets/images/kings_biryani_showcase.jpg",
-          design: "assets/images/kings_biryani_showcase.jpg",
-          capabilities: "assets/images/kings_biryani_showcase.jpg",
-          qa: "assets/images/kings_biryani_showcase.jpg",
-          stack: "assets/images/kings_biryani_showcase.jpg",
-          overview: "assets/images/kings_biryani_showcase.jpg",
-          goals: "assets/images/kings_biryani_showcase.jpg"
+          main: "assets/images/kings-biryani-home.png",
+          design: "assets/images/kings-biryani-home.png",
+          capabilities: "assets/images/kings-biryani-home.png",
+          qa: "assets/images/kings-biryani-home.png",
+          stack: "assets/images/kings-biryani-home.png",
+          overview: "assets/images/kings-biryani-home.png",
+          goals: "assets/images/kings-biryani-home.png"
         },
         testimonial: {
           text: "",
