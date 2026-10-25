@@ -835,8 +835,121 @@ button, input, select, textarea {
 
 @media (hover: hover) {
   .project-card:hover .project-img-wrap img {
-    transform: scale(1.04);
+    transform: scale(1.06);
   }
+}
+
+/* Project Card Image Overlay (Hover Actions) */
+.project-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 19, 0.68);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+  z-index: 3;
+}
+
+.project-overlay-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10px);
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-overlay {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.6rem 1.15rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: var(--transition);
+}
+
+.btn-overlay.btn-primary {
+  background-color: var(--accent-terracotta);
+  color: #FFFFFF;
+}
+
+.btn-overlay.btn-primary:hover {
+  background-color: var(--accent-terracotta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 82, 40, 0.38);
+}
+
+.btn-overlay.btn-secondary {
+  background-color: rgba(250, 248, 245, 0.95);
+  color: var(--text-charcoal);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-overlay.btn-secondary:hover {
+  background-color: #FFFFFF;
+  color: var(--accent-terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Desktop Hover & Keyboard Accessibility */
+@media (hover: hover) {
+  .project-card:hover .project-img-overlay,
+  .project-card:focus-within .project-img-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .project-card:hover .project-overlay-actions,
+  .project-card:focus-within .project-overlay-actions {
+    transform: translateY(0);
+  }
+}
+
+/* Touch & Mobile Fallback (Always display cleanly without requiring hover) */
+@media (hover: none), (max-width: 768px) {
+  .project-img-overlay {
+    opacity: 1;
+    visibility: visible;
+    background: linear-gradient(180deg, rgba(20, 20, 19, 0) 30%, rgba(20, 20, 19, 0.84) 100%);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    align-items: flex-end;
+    padding: 0.75rem 0.85rem;
+  }
+  .project-overlay-actions {
+    transform: none;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  .btn-overlay {
+    font-size: 0.72rem;
+    padding: 0.45rem 0.85rem;
+  }
+}
+
+/* Card spacing adjustments on projects page */
+.projects-grid .project-card .project-meta {
+  padding: 1.35rem 1.5rem 1.5rem;
+  flex: 0;
+}
+
+.projects-grid .project-card .project-meta h3.headline-md {
+  margin-bottom: 0;
+  font-size: 1.28rem;
+  line-height: 1.25;
 }
 
 .project-meta {
