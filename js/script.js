@@ -25,7 +25,7 @@ const STUDIO_DATA = {
       image: "assets/images/kings-biryani-home.png",
       tags: ["Restaurant Website", "WhatsApp Order", "Food Menu", "Photo Gallery"],
       hasCaseStudy: true,
-      demoUrl: "",
+      demoUrl: "https://kingbiryani.netlify.app/",
       isConceptDemo: false,
 
       caseStudy: {
@@ -529,7 +529,13 @@ function renderCaseStudy(container, project) {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.35rem;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
           BACK TO ALL PROJECTS
         </a>
-        <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+          ${project.demoUrl ? `
+            <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.72rem; padding: 0.45rem 1rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+              <span>VISIT LIVE DEMO</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          ` : ''}
           <span class="tag-badge" style="position: static; background: var(--bg-stone); color: var(--accent-terracotta); border-color: var(--border-stone); font-size: 0.7rem;">${project.tag || 'CONCEPT SHOWCASE'}</span>
           <span style="font-family: monospace; font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">PROJECT ${project.number} / 06</span>
         </div>
@@ -575,7 +581,7 @@ function renderCaseStudy(container, project) {
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
             <span style="width: 10px; height: 10px; border-radius: 50%; background: #D8D2C5; display: inline-block;"></span>
-            <span style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted); margin-left: 0.5rem; letter-spacing: 0.04em;">${project.title.toLowerCase().replace(/\s+/g, '-')}.concept.manoharsolutions.local</span>
+            <span style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted); margin-left: 0.5rem; letter-spacing: 0.04em;">${project.demoUrl ? project.demoUrl.replace(/^https?:\/\//, '').replace(/\/$/, '') : (project.title.toLowerCase().replace(/\s+/g, '-') + '.concept.manoharsolutions.local')}</span>
           </div>
           <div style="aspect-ratio: 16 / 9; overflow: hidden;">
             <img src="${project.image}" alt="${project.title} Full Website Showcase" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;" loading="eager">
@@ -796,6 +802,7 @@ function renderCaseStudy(container, project) {
           <p style="color: var(--text-muted); font-size: 0.9rem;">Let's build a clean, responsive solution customized for your business.</p>
         </div>
         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border-color: var(--accent-terracotta); color: var(--accent-terracotta); font-weight: 700;">VISIT LIVE WEBSITE ↗</a>` : ''}
           <a href="projects.html" class="btn btn-secondary">VIEW ALL PROJECTS</a>
           <a href="contact.html?project=${project.id}" class="btn btn-primary">START YOUR PROJECT →</a>
         </div>
