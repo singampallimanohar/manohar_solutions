@@ -15,50 +15,56 @@ const STUDIO_DATA = {
   },
   projects: [
     {
-      id: "glamora",
+      id: "kings-biryani",
       number: "01",
-      title: "GLAMORA",
-      category: "Fashion / Beauty Website",
-      filterCategory: "E-COMMERCE / PRODUCT",
-      tag: "CONCEPT SHOWCASE",
-      shortDescription: "A modern and elegant website concept designed for a luxury fashion and beauty brand, prioritizing editorial aesthetics and mobile fluidity.",
-      image: "assets/images/glamora_fashion_showcase_1790489146985.jpg",
-      tags: ["Lookbook UX", "Product Grid", "Sub-second Transitions", "Mobile-First"],
+      title: "KINGS BIRYANI'S",
+      category: "Restaurant Website Design",
+      filterCategory: "RESTAURANT / FOOD",
+      tag: "RESTAURANT WEBSITE",
+      shortDescription: "A modern, premium restaurant website featuring a cinematic homepage, digital food menu, food gallery, restaurant information, and WhatsApp ordering interface. Located in Tuni, Andhra Pradesh.",
+      image: "assets/images/kings_biryani_showcase.jpg",
+      tags: ["Restaurant Website", "WhatsApp Order", "Food Menu", "Photo Gallery"],
       hasCaseStudy: true,
       demoUrl: "",
-      isConceptDemo: true,
+      isConceptDemo: false,
 
       caseStudy: {
-        overview: "Glamora represents an elevated digital storefront concept reflecting luxury editorial aesthetics while providing seamless shopping journeys on desktop and mobile devices. The architectural focus is displaying high-resolution runway imagery without compromising mobile bandwidth.",
-        clientInfo: "Glamora Atelier & Beauty — Concept design prototype for luxury retail & cosmetics.",
+        overview: "Kings Biryani's and Family Restaurant is an authentic dum biryani restaurant in Tuni, Andhra Pradesh. The website was designed and developed to give the restaurant a strong digital presence, showcasing its menu, ambience, and making it easy for customers to order via WhatsApp or find the restaurant on Google Maps.",
+        clientInfo: "Kings Biryani's and Family Restaurant — Tuni, Andhra Pradesh. Authentic Andhra & Hyderabadi dum biryani served in a family-friendly AC dining environment.",
         goals: [
-          "Craft a refined, editorial-grade visual lookbook experience.",
-          "Ensure seamless, lag-free mobile browsing across varying network speeds.",
-          "Highlight curated seasonal collections with minimalist product cards.",
-          "Achieve sub-second page transitions and rapid visual rendering."
+          "Create a premium, cinematic online presence for the restaurant.",
+          "Display a comprehensive digital food menu with images and prices.",
+          "Enable direct WhatsApp-based ordering from the website.",
+          "Showcase the restaurant through a high-quality photo gallery.",
+          "Make the website fast, mobile-responsive, and easy to navigate.",
+          "Help customers find the restaurant location on Google Maps."
         ],
-        designApproach: "Guided by warm ivory backgrounds, charcoal typography, and subtle terracotta accents, Glamora balances high-contrast runway imagery with generous whitespace and refined serif-sans pairings.",
-        developmentApproach: "Engineered with semantic HTML5, modern CSS custom properties, and modular vanilla JavaScript. Zero framework bloat guarantees instant load times and fluid mobile touch interactions.",
+        designApproach: "The design uses a dark, cinematic aesthetic with gold typography and warm amber accents that complement biryani's rich colours. A full-screen video hero sets the mood instantly, while clear section structure guides visitors from the menu to ordering. The typography pairs Cinzel for headings with Outfit for body text, creating an upscale restaurant feel.",
+        developmentApproach: "Built with semantic HTML5, modern CSS with custom properties, and vanilla JavaScript. Features a dynamic food menu with cart functionality, WhatsApp integration for direct orders, and an interactive photo gallery. The site is fully mobile-responsive across all screen sizes.",
         keyFeatures: [
-          "Interactive seasonal lookbook showcase",
-          "Responsive product catalog with instant category filtering",
-          "Seamless cart and checkout inquiry flow",
-          "Mobile touch-optimized bottom navigation bar",
-          "High-DPI responsive image optimization with lazy loading",
-          "Subtle micro-interactions on button and card states"
+          "Cinematic full-screen video homepage with gold overlay",
+          "Digital food menu with 70+ dishes organized by category",
+          "Add-to-cart and WhatsApp order integration",
+          "High-quality food photo gallery",
+          "Restaurant information page with Google Maps embed",
+          "Contact page with directions and working hours",
+          "Mobile-first responsive design"
         ],
-        responsiveDesign: "Tested from 320px smartphone displays up to 4K ultra-wide monitors, ensuring flawless typography readability and image proportions at all breakpoints.",
-        technologies: ["HTML5", "CSS3 Grid/Flexbox", "Vanilla JavaScript", "Responsive Design", "Performance Tuning"],
-        finalResult: "A clean, conversion-ready fashion concept demonstrating sub-second loading speeds, lightweight asset bundling, and 98/100 Lighthouse benchmark performance.",
-        metrics: [
-          { label: "Target Load Time", value: "< 1.0s" },
-          { label: "Lighthouse Target", value: "98/100" },
-          { label: "Responsive QA", value: "320px–4K" }
-        ],
+        responsiveDesign: "Optimised for all screen sizes from 320px mobile to 1440px desktop. Mobile navigation uses a slide-in drawer. The food menu grid reflows from 4-column to 2-column to 1-column based on screen width.",
+        techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "Font Awesome Icons", "Google Fonts (Cinzel, Outfit)", "WhatsApp Business API"],
+        images: {
+          main: "assets/images/kings_biryani_showcase.jpg",
+          design: "assets/images/kings_biryani_showcase.jpg",
+          capabilities: "assets/images/kings_biryani_showcase.jpg",
+          qa: "assets/images/kings_biryani_showcase.jpg",
+          stack: "assets/images/kings_biryani_showcase.jpg",
+          overview: "assets/images/kings_biryani_showcase.jpg",
+          goals: "assets/images/kings_biryani_showcase.jpg"
+        },
         testimonial: {
-          quote: "[Client Review Placeholder — To be updated with verified client feedback upon project completion]",
-          author: "[Client Name Placeholder]",
-          role: "[Client Title / Company]"
+          text: "",
+          author: "",
+          role: ""
         }
       }
     },
@@ -470,7 +476,7 @@ function initCaseStudyLoader() {
     const urlParams = new URLSearchParams(window.location.search);
     let projectId = urlParams.get('project');
 
-    // Graceful default: if no project specified, load the first one (GLAMORA)
+    // Graceful default: if no project specified, load the first one
     if (!projectId) {
       projectId = STUDIO_DATA.projects[0].id;
     }
@@ -875,7 +881,7 @@ function initContactForm() {
       select.value = 'Landing Page';
     } else if (p.includes('photo') || p.includes('portfolio')) {
       select.value = 'Portfolio Website';
-    } else if (p.includes('glamora') || p.includes('naturals') || p.includes('commerce')) {
+    } else if (p.includes('kings-biryani') || p.includes('naturals') || p.includes('commerce')) {
       select.value = 'Responsive Website';
     } else {
       select.value = 'Business Website';
